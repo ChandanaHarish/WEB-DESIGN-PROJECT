@@ -1,0 +1,72 @@
+@import "../../SassHelpers/variables.scss";
+@import "../../SassHelpers/flex";
+
+form {
+  padding: 0 1em;
+  h2 {
+    margin-top: 2em;
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  .input-wrapper {
+    margin-top: 1.5em;
+    label {
+      font-size: $lengthMd2;
+      display: block;
+      margin-bottom: 0.25em;
+      &.required::after {
+        content: " *";
+        color: red;
+      }
+    }
+    input {
+      display: block;
+      font-size: $lengthMd2;
+      padding: 0.5em;
+      width: 100%;
+      &::placeholder {
+        color: #b4b4b4;
+      }
+    }
+    .images {
+      padding: 0;
+    }
+    textarea {
+      max-width: 100%;
+      min-width: 100%;
+      min-height: 10rem;
+      padding: 0.5em;
+      height: $lengthLg3;
+      font-size: $lengthMd2;
+      &::placeholder {
+        color: #b4b4b4;
+        font-family: $font-poppins;
+      }
+    }
+  }
+  .form-cta {
+    @include flex-mixin(center, unset);
+    padding: 1em 0;
+  }
+  .primary-btn {
+    font-weight: 500;
+    padding: 0.5em 1.5em;
+    background: $color-primary;
+    margin-right: 1em;
+    color: $color-white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 300ms ease-in-out;
+    &:hover {
+      background: #0350bd;
+    }
+  }
+  .secondary-btn {
+    font-size: $lengthMd2;
+    color: #a4a3a6;
+    cursor: pointer;
+    background: $color-white;
+    border: 0;
+  }
+}

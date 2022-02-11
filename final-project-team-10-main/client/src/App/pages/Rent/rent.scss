@@ -1,0 +1,10 @@
+@import "../../SassHelpers/variables.scss";
+
+.page-title {
+  font-size: $lengthLg1;
+  text-align: center;
+  margin-top: 1em;
+  span {
+    background: linear-gradient(180deg, transparent 70%, #90a1ff 50%);
+  }
+}

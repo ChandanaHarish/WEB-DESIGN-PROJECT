@@ -1,0 +1,33 @@
+@import "../../SassHelpers/variables.scss";
+.input-field {
+  position: relative;
+  width: 100%;
+  input {
+    width: 100%;
+    padding: 1em 0.5em;
+    font-size: $lengthMd1;
+    &:focus {
+      outline-color: $color-primary;
+    }
+    &:focus + label {
+      top: -0.6em;
+      background: $color-white;
+    }
+    &.not-empty + label {
+      top: -0.6em;
+      background: #fff;
+    }
+  }
+  label {
+    position: absolute;
+    padding: 0 0.2em;
+    left: 0.5em;
+    top: 1em;
+    font-size: $lengthMd1;
+    background: #fff;
+    transition: all ease-in-out 200ms;
+    &.no-error {
+      top: -0.6em;
+    }
+  }
+}

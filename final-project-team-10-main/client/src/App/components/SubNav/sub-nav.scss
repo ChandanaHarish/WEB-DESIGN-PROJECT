@@ -1,0 +1,61 @@
+@import "../../SassHelpers/flex";
+@import "../../SassHelpers/variables.scss";
+
+.sub-nav {
+  border-top: 1px solid $color-primary;
+  border-bottom: 1px solid $color-primary;
+  .nav-filters {
+    padding: 1em 0;
+    width: 30em;
+    margin:0 auto;
+    .nav-filter:not(:last-child) {
+      margin-right: 1.5em;
+    }
+    select{
+      cursor:pointer;
+    }
+    .nav-filter {
+      .search-box {
+        border:1px solid #eee;
+        width: 100%;
+        font-size: 1rem;
+        height: 3rem;
+        padding-left: 1em;
+        &:hover, &:focus{
+          border-color:rgb(138, 137, 137);
+        }
+        input{
+          border:0;
+          width: 85%;
+          height:80%;
+          font-size:1rem;
+          &:focus{
+            outline:0;
+          }
+        }
+        button{
+          border:0;
+          width:15%;
+          height:100%;
+          cursor:pointer;
+        }
+      }
+      .select-box {
+        font-size: 1rem;
+        height: 3rem;
+        padding: 0.4em;
+      }
+      label {
+        margin-right: 1em;
+      }
+    }
+    .option-filter {
+      @include flex-mixin();
+      .nav-filter{
+        label{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

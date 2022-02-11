@@ -1,0 +1,12 @@
+@import "../../SassHelpers/variables.scss";
+@import "../../SassHelpers/flex";
+
+
+.single-item-card{
+    margin: 4em auto;
+    padding: 1em;
+    border: 1px solid #006aff;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px 0 #ababab;
+    max-width: 40em;
+}

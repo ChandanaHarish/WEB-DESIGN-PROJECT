@@ -1,0 +1,34 @@
+@import "../../../SassHelpers/flex";
+@import "../../../SassHelpers/variables.scss";
+
+
+.myItems {
+    @include flex-mixin(unset, unset);
+    display: flex;
+    background-color: white;
+    width: 1000px;
+    position: relative;
+    left: 85px;
+    top: 20px;
+    height: 427px;
+    text-align: -webkit-auto;
+    padding: 34px;
+}
+.myItemsInfo{
+    padding-right: 80px;
+    .myItemsWillow{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        width:100%;
+        padding-right: 65px;
+    }
+    .myItemsDesc{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        width:100%;
+        padding-right: 65px;
+    
+    }
+    .myItemsContactInfo{
+        position: relative;
+        top: 18px;
+    }
+}

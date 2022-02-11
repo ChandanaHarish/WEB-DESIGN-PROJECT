@@ -1,0 +1,65 @@
+@import "../../SassHelpers/flex";
+@import "../../SassHelpers/variables.scss";
+
+.auth-form {
+  max-width: 500px;
+  margin: 3em auto;
+  padding: 2.5em 2em 2em;
+  background: #fff;
+  button {
+    width: 100%;
+  }
+  .primary-btn {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1em 0.5em;
+    background: $color-primary;
+    margin-right: 1em;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 300ms ease-in-out;
+    margin-bottom:1em;
+    &:hover {
+      background: #0350bd;
+    }
+  }
+  .google-btn{
+    @include flex-mixin(center,center);
+  }
+  .mb-2 {
+    margin-bottom: 2em;
+  }
+  .title {
+    @include flex-mixin(center, center);
+    flex-direction: column;
+    span {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background: $color-primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1em;
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+  .secondary-btn {
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 1em 0.5em;
+    cursor: pointer;
+    border: 0;
+    background-color: #eee;
+    color: #000;
+  }
+}

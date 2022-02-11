@@ -1,0 +1,15 @@
+@import "../../SassHelpers/variables.scss";
+.primary-btn{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.5em 1.5em;
+    background: $color-primary;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 300ms ease-in-out;
+    &:hover{
+        background:#0350bd;
+    }
+}
